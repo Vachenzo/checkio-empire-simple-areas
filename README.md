@@ -1,4 +1,4 @@
-checkio-task-simple-areas
+simple-areas
 =========================
 
-Checkio Mission "Simple Areas"
+Crystal Store 1.1 "Simple Areas"
