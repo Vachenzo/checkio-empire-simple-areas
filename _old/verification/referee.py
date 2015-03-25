@@ -15,5 +15,5 @@ api.add_listener(
             'python-3': cover_codes.unwrap_args
         },
         checker=checkers.float_comparison(2),
-        function_name="simple_areas"
+        DEFAULT_FUNCTION_NAME="simple_areas"
     ).on_ready)
