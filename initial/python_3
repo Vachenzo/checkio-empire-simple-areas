@@ -13,7 +13,7 @@ if __name__ == '__main__':
     assert almost_equal(simple_areas(3, 5, 4), 6), "Triangle"
     assert almost_equal(simple_areas(1.5, 2.5, 2), 1.5), "Small triangle"
 
-    # Rank 3
+    # Rank 2
     assert almost_equal(simple_areas(5.66, 1.0, 5.66, 9.0), 20.02), "Quadrilateral"
     assert almost_equal(simple_areas(12, 20, 24, 10), 237.72), "Rectangle again"
     assert almost_equal(simple_areas(42, 42, 42, 42), 1764), "Square"
