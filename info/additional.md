@@ -8,7 +8,7 @@
 0 < len(args) <= 4
 ```
 
-**Rank 2**: Your function can work with 5 and 6 arguments.
+**Rank 3**: Your function can work with 5 and 6 arguments.
 
 -- Five arguments -- The lengths of each side on an equidiagonal quadrilateral 
 (whose two diagonals have equal length) and the length of a diagonal.
