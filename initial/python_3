@@ -19,5 +19,5 @@ if __name__ == '__main__':
     assert almost_equal(simple_areas(42, 42, 42, 42), 1764), "Square"
 
     # Rank 3
-    assert almost_equal(simple_areas(5.66, 1.0, 5.66, 9.0, 6.4), 64.81), "Quadrilateral 5"
-    assert almost_equal(simple_areas(4.0, 4.0, 7.62, 7.62, 9.9, 5.66), 181.01), "Quadrilateral 6"
+    assert almost_equal(simple_areas(5.66, 1.0, 5.66, 9.0, 6.4), 19.98), "Quadrilateral 5"
+    assert almost_equal(simple_areas(4.0, 4.0, 7.62, 7.62, 9.9, 5.66), 28.017), "Quadrilateral 6"
