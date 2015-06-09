@@ -6,5 +6,3 @@ You are give an arbitrary number of arguments which the function should use to c
 - Three arguments -- The lengths of each side on a triangle and you need calculate the area of the triangle.
 
 The result should be given with two digit precision like so: +-0.01
-
-![Simple areas](simple-areas.svg)
