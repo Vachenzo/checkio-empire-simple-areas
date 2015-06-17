@@ -1,4 +1,4 @@
-from checkio_referee import RefereeRank
+from checkio_referee import RefereeRank, RefereeBase
 from checkio_referee import covercodes, validators, representations
 
 
@@ -10,7 +10,7 @@ Validator = validators.FloatEqualValidator
 Validator.PRECISION = 2
 
 
-class Referee(RefereeRank):
+class Referee(RefereeBase):
     TESTS = TESTS
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
