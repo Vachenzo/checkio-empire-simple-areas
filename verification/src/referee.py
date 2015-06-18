@@ -1,5 +1,6 @@
 from checkio_referee import RefereeRank, RefereeBase
 from checkio_referee import covercodes, validators, representations
+from checkio_referee import ENV_NAME
 
 
 import settings_env
@@ -15,14 +16,16 @@ class Referee(RefereeBase):
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
     DEFAULT_FUNCTION_NAME = "simple_areas"
+    FUNCTION_NAMES = {
+        ENV_NAME.JS_NODE: "simpleAreas"
+    }
+
     VALIDATOR = Validator
     ENV_COVERCODE = {
-        "python_2": covercodes.py_unwrap_args,
-        "python_3": covercodes.py_unwrap_args,
-        "javascript": None
+        ENV_NAME.PYTHON: covercodes.py_unwrap_args,
+        ENV_NAME.JS_NODE: covercodes.js_unwrap_args
     }
     CALLED_REPRESENTATIONS = {
-        "python_2": representations.unwrap_arg_representation,
-        "python_3": representations.unwrap_arg_representation,
-        "javascript": representations.unwrap_arg_representation,
+        ENV_NAME.PYTHON: representations.unwrap_arg_representation,
+        ENV_NAME.JS_NODE: representations.unwrap_arg_representation,
     }

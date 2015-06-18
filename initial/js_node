@@ -1,0 +1,22 @@
+"use strict";
+
+function simpleAreas() {
+    return arguments[0] * arguments[0];
+}
+
+var assert = require('assert');
+
+if (!global.is_checking) {
+    // These "asserts" using only for self-checking and not necessary for auto-testing
+    var almostEqual = function(actual, expected, significantDigits){
+        significantDigits = significantDigits || 2;
+        var precision =  Math.pow(0.1, significantDigits);
+        return Math.abs(expected - actual) < precision;
+    };
+
+    assert(almostEqual(simple_areas(3), 7.07), "Circle");
+    assert(almostEqual(simple_areas(2, 2), 4), "Square");
+    assert(almostEqual(simple_areas(2, 3), 6), "Rectangle");
+    assert(almostEqual(simple_areas(3, 5, 4), 6), "Triangle");
+    assert(almostEqual(simple_areas(1.5, 2.5, 2), 1.5), "Small triangle");
+}
