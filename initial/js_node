@@ -14,9 +14,9 @@ if (!global.is_checking) {
         return Math.abs(expected - actual) < precision;
     };
 
-    assert(almostEqual(simple_areas(3), 7.07), "Circle");
-    assert(almostEqual(simple_areas(2, 2), 4), "Square");
-    assert(almostEqual(simple_areas(2, 3), 6), "Rectangle");
-    assert(almostEqual(simple_areas(3, 5, 4), 6), "Triangle");
-    assert(almostEqual(simple_areas(1.5, 2.5, 2), 1.5), "Small triangle");
+    assert(almostEqual(simpleAreas(3), 7.07), "Circle");
+    assert(almostEqual(simpleAreas(2, 2), 4), "Square");
+    assert(almostEqual(simpleAreas(2, 3), 6), "Rectangle");
+    assert(almostEqual(simpleAreas(3, 5, 4), 6), "Triangle");
+    assert(almostEqual(simpleAreas(1.5, 2.5, 2), 1.5), "Small triangle");
 }
