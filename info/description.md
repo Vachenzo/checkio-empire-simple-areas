@@ -1,8 +1,8 @@
 You should write a function to calculate the area of simple figures: circles, rectangles and triangles.
 You are given an arbitrary number of arguments which the function should use to calculate the area for the different figures.
 
-- One argument -- The diameter of a circle and you need calculate the area of the circle.
-- Two arguments -- The side lengths of a rectangle and you need calculate the area of the rectangle.
-- Three arguments -- The lengths of each side on a triangle and you need calculate the area of the triangle.
+- One argument -- The diameter and area of a circle.
+- Two arguments -- The side lengths and area of a rectangle.
+- Three arguments -- The lengths of each side and the area of a triangle.
 
-The result should be given with two digit precision like so: +-0.01
+The result should be given with a two digit precision of +/- 0.01
